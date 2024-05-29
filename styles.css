@@ -1,3 +1,5 @@
+/* style.css */
+
 /* Reseta e configurações globais */
 * {
   margin: 0;
@@ -8,6 +10,7 @@
 body {
   background-color: rgba(169, 169, 169, 0.579);
   font-family: 'Bungee', sans-serif;
+  line-height: 1.6;
 }
 
 /* Cabeçalho */
@@ -35,7 +38,7 @@ header nav ul li a {
 }
 
 header nav ul li:hover a {
-  color: #ffd700; /* Cor de destaque ao passar o mouse */
+  color: #ffd700;
 }
 
 /* Container */
@@ -55,15 +58,17 @@ section .container {
 
 /* Seções */
 section {
-  padding: 24px 0;
+  padding: 48px 0; /* Aumenta o espaçamento entre as seções */
+  text-align: center;
 }
 
 section h2 {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 32px;
 }
 
 section p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 section img {
@@ -73,11 +78,12 @@ section img {
 }
 
 /* Estilizando a linha horizontal */
-hr {
+hr.section-divider {
   border: 0;
-  height: 1px;
+  height: 2px;
   background: #00bfff;
-  margin: 24px 0;
+  margin: 24px auto 48px auto; /* Aumenta o espaço ao redor do divisor */
+  width: 80%; /* Centraliza a linha */
 }
 
 /* Lista de produtos */
@@ -87,6 +93,7 @@ hr {
   gap: 20px;
   list-style: none;
   padding: 0;
+  justify-content: center; /* Centraliza os produtos */
 }
 
 .lista-produtos li {
@@ -96,6 +103,8 @@ hr {
   transform: translateY(20px);
   animation: fadeInUp 0.5s forwards;
   animation-delay: calc(var(--animation-order) * 0.1s);
+  text-align: center; /* Centraliza o texto dentro do item */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
 }
 
 .lista-produtos li img {
@@ -105,7 +114,7 @@ hr {
 }
 
 .lista-produtos li:hover img {
-  transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
+  transform: scale(1.1);
 }
 
 .lista-produtos li h3 {
@@ -122,8 +131,8 @@ button {
 }
 
 button:hover {
-  background-color: #007acc; /* Cor de destaque ao passar o mouse */
-  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  background-color: #007acc;
+  transform: scale(1.05);
 }
 
 /* Animação de fade-in */
