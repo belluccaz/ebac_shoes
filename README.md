@@ -28,7 +28,7 @@ Ebac-Shoes/
 ## Instruções para Execução
 1. Clone o repositório para a sua máquina local.
    ```
-   git clone https://github.com/seu-usuario/ebac-shoes.git
+   git clone https://github.com/belluccaz/ebac-shoes.git
    
 Navegue até o diretório do projeto.
 cd ebac-shoes
